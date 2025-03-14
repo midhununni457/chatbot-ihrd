@@ -1,0 +1,60 @@
+Q: What is ICGAIFE 2.0?
+A: ICGAIFE 2.0 stands for the International Conclave on Generative AI and the Future of Education 2.0, a global event focused on AI’s role in education.
+
+Q: When and where was ICGAIFE 2.0 held?
+A: It was held from December 8 to 10, 2024, at Nishagandhi Auditorium, Kanakakunnu Palace, Thiruvananthapuram, Kerala.
+
+Q: Who organized ICGAIFE 2.0?
+A: It was co-organized by the Higher Education Department of the Government of Kerala and the Institute of Human Resources Development (IHRD).
+
+Q: What was the main objective of ICGAIFE 2.0?
+A: The conclave aimed to discuss the transformative impact of AI on education and bring together experts, educators, policymakers, and students.
+
+Q: What were the key activities at ICGAIFE 2.0?
+A:
+-Keynote Sessions by AI and education experts
+-International Conference on AI’s Applications in Education (AITEDUCONF 2024)
+-IEEE Roundtable Discussion on AI in higher education
+-GenAI Connect Sessions on AI’s impact across various fields
+-AI Quiz for Learners
+-24-hour Student Hackathon
+-Exhibitions and Public Demonstrations
+-AI SAMASYA 2024 – National-Level Hackathon on AI in education
+
+Q: Who were some notable speakers at ICGAIFE 2.0?
+A:
+-Prof. Kannan M. Moudgalya (IIT Bombay) – AI-driven learning platforms
+-Prof. K. V. S. Hari (IISc Bangalore) – AI in higher education
+-Mr. Aldrin Jenson (Athena Intelligence, New York) – AI in personalized learning
+-Dr. Prahlad Vadakkepatt (National University of Singapore) – AI in skill development
+-Dr. David Natarajan (Universiti Teknologi MARA, Malaysia) – AI in engineering education
+-Dr. Arun Surendran (Trinity Engineering College) – AI as an enhancement tool
+-Dr. Alpana Dubey (Accenture Labs, Bangalore) – AI-powered adaptive learning models
+-Dr. B. Shadrach (Commonwealth Media Centre for Asia, New Delhi) – AI ethics in education
+-Ms. Shalini Kapoor (Amazon Web Services, Bangalore) – Cloud-based AI solutions for education
+
+Q: What was the focus of the IEEE Roundtable Discussion at ICGAIFE 2.0?
+A The roundtable focused on "The Role, Influence, and Future of Generative AI in Higher Education" and featured panelists from IISc, IBM, UST SmartOps, and MathWorks.
+
+Q: What was AITEDUCONF 2024?
+A: It was an international conference held during ICGAIFE 2.0, focusing on AI-driven pedagogical models, student assessment, and educational management.
+
+Q: What topics were covered in the GenAI Connect Sessions?
+A:
+-AI in the Judicial System – Legal research, case management
+-AI in Media – Content creation, audience engagement
+-AI in Law Enforcement – Crime prevention, predictive policing
+-AI in Healthcare – AI-assisted diagnostics, treatment planning
+-AI in Kerala Education – Personalized learning, automation
+
+Q: What was the AI Quiz for Learners at ICGAIFE 2.0?
+A: A competitive event testing students’ AI knowledge, led by quizmaster Major Chandrakant Nair.
+
+Q: What was AI SAMASYA 2024?
+A: A national-level AI hackathon where participants built AI-driven educational solutions like adaptive learning platforms and AI-assisted tutoring systems.
+
+Q: What was the impact of ICGAIFE 2.0?
+A: The conclave fostered discussions on AI’s role in education, ethics, policy-making, and skill development, encouraging future AI-driven advancements in education.
+
+Q: What was the conclusion of ICGAIFE 2.0?
+A: The event marked a major milestone in AI-driven education, highlighting both AI’s potential and the need for responsible adoption in learning environments.

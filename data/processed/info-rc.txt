@@ -1,0 +1,14 @@
+Q: What is the Regional Centre of IHRD in Thiruvananthapuram?
+A: The Regional Centre of IHRD in Thiruvananthapuram was established by the Government of Kerala to provide high-quality IT education and skill development. It aims to train individuals in IT and ITES for administrative and business needs, including underprivileged sections of society, to ensure broader participation in nation-building.
+
+Q: What courses are offered at the Regional Centre of IHRD, Thiruvananthapuram?
+A: The courses include IHRD Regular Courses (DCA, PGDCA, CCLIS, DDTOA), Certificate Courses (Tally, GST, Python Programming, MS Office), One-Day AI and Python Workshops for High School Students, 20-Day Courses (IT, Django & Web Hosting, Generative AI), Internships (Python, AI, C Programming), Academic Project Guidance, Skill Development Programs (NULM, PMKVY), and FYUGP CCSD & CP programs in collaboration with Kerala University.
+
+Q: Who is eligible for various courses at the Regional Centre of IHRD?
+A: The eligibility varies by course. DCA requires Plus Two, PGDCA requires a UG degree, CCLIS and DDTOA require an SSLC pass. Certificate courses are open to SSLC holders, while workshops and internships are for students with relevant qualifications. Academic Project Guidance is available for B.Sc. and B.Tech students. Skill development programs are open to school and college students as well as individuals without formal education who seek employment-related skills.
+
+Q: How is admission conducted at the Regional Centre of IHRD, Thiruvananthapuram?
+A: Admission notifications are published on the IHRD website, institutional website, and in local newspapers. The institution directly handles admissions following IHRD guidelines and reservation policies where applicable.
+
+Q: Do candidates receive certificates after completing courses at the Regional Centre of IHRD?
+A: Yes, candidates who successfully complete their courses receive IHRD certificates, which validate their training and skills.
