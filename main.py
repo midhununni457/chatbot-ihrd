@@ -3,39 +3,59 @@ import re
 from fuzzywuzzy import fuzz, process
 
 def load_qa_pairs(file_path):
-    with open(file_path, 'r', encoding='utf-8') as file:
-        content = file.read()
-    
-    pattern = r'Q: (.*?)\nA: (.*?)(?=\n\nQ:|$)'
-    matches = re.findall(pattern, content, re.DOTALL)
-    
-    qa_dict = {}
-    for question, answer in matches:
-        qa_dict[question.strip()] = answer.strip()
-    
-    return qa_dict
+    try:
+        with open(file_path, 'r', encoding='utf-8') as file:
+            content = file.read()
+        
+        pattern = r'Q: (.*?)\nA: (.*?)(?=\n\nQ:|$)'
+        matches = re.findall(pattern, content, re.DOTALL)
+        
+        qa_dict = {}
+        for question, answer in matches:
+            qa_dict[question.strip()] = answer.strip()
+        
+        return qa_dict
+    except Exception:
+        return {}
 
 def find_best_match(user_query, questions, threshold=60):
-    best_match = process.extractOne(user_query, questions, scorer=fuzz.token_set_ratio)
+    if not questions:
+        return None
     
-    if best_match and best_match[1] >= threshold:
-        return best_match[0]
-    return None
+    try:
+        best_match = process.extractOne(user_query, questions, scorer=fuzz.token_set_ratio)
+        
+        if best_match and best_match[1] >= threshold:
+            return best_match[0]
+        else:
+            return None
+    except Exception:
+        return None
 
 def chatbot_response(user_query, qa_dict):
-    questions = list(qa_dict.keys())
-    best_match = find_best_match(user_query, questions)
-    
-    if best_match:
-        return qa_dict[best_match]
-    else:
-        return "I'm sorry, I couldn't find information related to your question. Could you please rephrase?"
+    try:
+        questions = list(qa_dict.keys())
+        best_match = find_best_match(user_query, questions)
+        
+        if best_match:
+            return qa_dict[best_match]
+        else:
+            return "I'm sorry, I couldn't find information related to your question. Could you please rephrase?"
+    except Exception:
+        return "I apologize, but I encountered an error while processing your request."
 
 def main():
     script_dir = os.path.dirname(os.path.abspath(__file__))
     
-    qa_file_path = os.path.join(script_dir, "data", "processed", "it_activities.txt")
-    qa_pairs = load_qa_pairs(qa_file_path)
+    # Load QA pairs from all files in the processed directory
+    processed_dir = os.path.join(script_dir, "data", "processed")
+    
+    all_qa_pairs = {}
+    for filename in os.listdir(processed_dir):
+        if filename.endswith(".txt"):
+            file_path = os.path.join(processed_dir, filename)
+            qa_pairs = load_qa_pairs(file_path)
+            all_qa_pairs.update(qa_pairs)
     
     print("IHRD Chatbot")
     print("Type 'exit' or 'quit' to end the conversation.")
@@ -47,7 +67,7 @@ def main():
             print("Goodbye!")
             break
         
-        response = chatbot_response(user_input, qa_pairs)
+        response = chatbot_response(user_input, all_qa_pairs)
         print(f"Bot: {response}")
 
 if __name__ == "__main__":

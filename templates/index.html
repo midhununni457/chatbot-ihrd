@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IHRD Chatbot</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+  </head>
+  <body>
+    <div class="chat-container">
+      <div class="chat-header">
+        <h1>IHRD Chatbot</h1>
+        <p>Ask me anything about IHRD</p>
+      </div>
+
+      <div class="chat-messages" id="chatMessages">
+        <div class="message bot-message">
+          <div class="message-content">
+            <p>Hello! I'm the IHRD Chatbot. How can I help you today?</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="chat-input">
+        <form id="chatForm">
+          <input
+            type="text"
+            id="userInput"
+            placeholder="Type your question here..."
+            autocomplete="off"
+          />
+          <button type="submit">Send</button>
+        </form>
+      </div>
+
+      <div class="chat-status">
+        <span id="connectionStatus">Connecting...</span>
+        <button
+          id="reconnectButton"
+          class="reconnect-btn"
+          style="display: none"
+        >
+          Reconnect
+        </button>
+      </div>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+  </body>
+</html>
