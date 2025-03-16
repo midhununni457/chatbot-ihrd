@@ -1,0 +1,303 @@
+Here’s the Q&A format based on   IHRD Tharang '23 Report   for chatbot integration:  
+
+---
+
+    Q&A Format for Fuzzy Search - IHRD Tharang '23    
+
+1.   Q:   What is IHRD Tharang '23?  
+     A:   IHRD Tharang '23 was a   techno-cultural festival   held at the   College of Engineering, Chengannur  , from   February 2-6, 2023  . It featured technical, cultural, and entrepreneurial events, along with exhibitions, workshops, and competitions.  
+
+2.   Q:   Who inaugurated IHRD Tharang '23?  
+     A:   The festival was inaugurated by   Hon'ble Minister Dr. R. Bindu  , with a presidential address by   Shri. Saji Cherian, Minister for Fisheries, Culture & Youth Affairs  .  
+
+3.   Q:   What were the main venues for Tharang '23?  
+     A:   The   College of Engineering Chengannur   served as the main venue. Events took place at the   main stage, open auditorium, classrooms, SDPK Room, and AC Auditorium  .  
+
+4.   Q:   What types of competitions were held at Tharang '23?  
+     A:   The festival hosted   technical, cultural, and gaming competitions  , including   Contraption, Circuit Showdown, Area 51, Tik-Tik Boom, Bridge-a-Ton, PUBG, Valorant, Rubik’s Cube, Sudoku, and Step into Rhythm  .  
+
+5.   Q:   What were the major technical competitions in Tharang '23?  
+     A:   Some major technical competitions included   Circuit Debugging, Line Chaser, Circuitathon, Tech Quiz, Key Mismatch, and Formula GSM  .  
+
+6.   Q:   What cultural competitions took place at Tharang '23?  
+     A:   Cultural events included   Mime, Vocal Range, Step into Rhythm, Flash Step, Radiant Stroke, Just A Minute, and Freeze Frame  .  
+
+7.   Q:   What workshops were conducted at Tharang '23?  
+     A:   Workshops covered   Flutter, Data Science, AI & Robotics, Ethical Hacking, Cloud Computing, PCB Designing, and Embedded Systems  .  
+
+8.   Q:   What pre-events were held for Tharang '23?  
+     A:   Pre-events included   Innovation Challenges, Mimamsa Talk Series, Boot Camps, Hackathons, Industrial Visits, and Flash Mobs  .  
+
+9.   Q:   What was the highlight of the publicity campaign for Tharang '23?  
+     A:   The campaign featured   a statewide flash mob, rap songs, talk sessions, campus ambassador programs, and collaborations with Radio Mango  .  
+
+10.   Q:   What special prizes were awarded at Tharang '23?  
+      A:   Special prizes were given in the   Lucky Dip contest  , with winners receiving   laptops, smartphones, smartwatches, AirPods, and more  .  
+
+11.   Q:   Which college won the overall championship in Tharang '23?  
+      A:   The   College of Applied Science, Chelakkara   won the   Overall Championship  , followed by   CAS Adoor and KKMTPC Mala  .  
+
+12.   Q:   What was the role of the IHRD Job Fair at Tharang '23?  
+      A:   The   IHRD Job Fair 1.0  , held as part of Tharang '23, connected   400+ job seekers   with   17+ companies  , conducting onsite tests and interviews.  
+
+Here’s the Q&A format for chatbot integration based on   IHRD Tharang '23 Report  :  
+
+
+
+1.   Q:   What is IHRD Tharang '23?  
+     A:   IHRD Tharang '23 was the first   national-level techno-cultural-entrepreneurial event   organized by the Institute of Human Resources Development (IHRD). It took place from   February 2-6, 2023  , at the   College of Engineering, Chengannur   and featured workshops, competitions, exhibitions, and networking opportunities.  
+
+2.   Q:   What was the theme of IHRD Tharang '23?  
+     A:   The theme of Tharang '23 was   "Science, Youth, and Leadership"  , emphasizing scientific inquiry, youth empowerment, and leadership development.  
+
+3.   Q:   Who organized IHRD Tharang '23?  
+     A:   The event was organized by   IHRD   in collaboration with the   College of Engineering, Chengannur  , and supported by faculty, students, and various industry partners.  
+
+4.   Q:   What were the major highlights of IHRD Tharang '23?  
+     A:   Key highlights included   technical and cultural competitions, a project expo, workshops on emerging technologies, a job fair, entrepreneurship programs, and networking events  .  
+
+5.   Q:   What kind of workshops were conducted at Tharang '23?  
+     A:   Workshops covered   AI & Robotics, Data Science, Cloud Computing, Flutter, Ethical Hacking, PCB Designing, Embedded Systems, and Digital Marketing  .  
+
+6.   Q:   What competitions were held at IHRD Tharang '23?  
+     A:   Competitions included   coding challenges, robotics contests, contraption events, technical quizzes, bridge-building, Rubik’s Cube solving, music, dance, and drama competitions  .  
+
+7.   Q:   What was the Project Expo at Tharang '23?  
+     A:   The   Project Expo   provided students with a platform to present   research projects, prototypes, and real-world solutions  , showcasing their creativity and innovation.  
+
+8.   Q:   What was the purpose of the IHRD Job Fair 1.0 at Tharang '23?  
+     A:   The   IHRD Job Fair 1.0   connected   400+ job seekers   with   17+ companies  , providing on-site interviews and employment opportunities.  
+
+9.   Q:   What pre-events were conducted for IHRD Tharang '23?  
+     A:   Pre-events included   Innovation Challenges, Hackathons, Boot Camps, Industrial Visits, and Flash Mobs  , designed to build excitement and engagement.  
+
+10.   Q:   What awards and recognitions were given at Tharang '23?  
+     A:   Awards were given to competition winners, best-performing colleges, and participants in the   Lucky Dip contest  , where winners received   laptops, smartphones, and smartwatches  .  
+
+---
+
+Here’s an updated Q&A format for chatbot integration based on additional details from   IHRD Tharang '23 Report  :  
+
+---
+
+    Q&A Format for Fuzzy Search - IHRD Tharang '23    
+
+1.   Q:   What is IHRD Tharang '23?  
+     A:   IHRD Tharang '23 was the first   national-level techno-cultural-entrepreneurial festival   organized by the   Institute of Human Resources Development (IHRD)   from   February 2-6, 2023  , at the   College of Engineering, Chengannur  . The event featured workshops, competitions, exhibitions, and networking opportunities.  
+
+2.   Q:   What was the theme of IHRD Tharang '23?  
+     A:   The theme of IHRD Tharang '23 was   "Science, Youth, and Leadership"  , focusing on innovation, youth empowerment, and leadership development.  
+
+3.   Q:   What were the major highlights of IHRD Tharang '23?  
+     A:   The festival included   technical and cultural competitions, a project expo, startup showcases, industry workshops, a job fair, and interactive networking sessions  .  
+
+4.   Q:   What were some key technical competitions at Tharang '23?  
+     A:   Major technical competitions included   Coding Challenges, Robotics Contests, Circuit Debugging, Contraption Events, Tech Quiz, and AI Challenges  .  
+
+5.   Q:   What cultural competitions took place at IHRD Tharang '23?  
+     A:   Cultural events featured   Step into Rhythm (Dance), Radiant Stroke (Painting), Flash Step, Just A Minute (Speaking), and Freeze Frame (Photography)  .  
+
+6.   Q:   What was the purpose of the Project Expo at Tharang '23?  
+     A:   The   Project Expo   served as a platform for students to present   innovative projects, research work, and real-world solutions   to industry professionals and academicians.  
+
+7.   Q:   What was the significance of the IHRD Job Fair at Tharang '23?  
+     A:   The   IHRD Job Fair 1.0   connected   400+ job seekers   with   17+ companies  , offering on-site interviews and employment opportunities.  
+
+8.   Q:   What kind of workshops were conducted at IHRD Tharang '23?  
+     A:   Workshops covered   AI & Robotics, Data Science, Cloud Computing, Ethical Hacking, PCB Designing, Flutter, and Digital Marketing  .  
+
+9.   Q:   What was the purpose of the Publicity and Media Committees at Tharang '23?  
+     A:   These committees handled   branding, online promotions, live streaming, media coverage, and official social media content   to enhance event outreach.  
+
+10.   Q:   What awards and recognitions were given at Tharang '23?  
+      A:   Awards were distributed for   competition winners, best-performing colleges, and top projects  . Special prizes, including   laptops, smartphones, and smartwatches  , were awarded through the   Lucky Dip contest  .  
+
+---
+Here’s an updated Q&A format incorporating details from the   IHRD Tharang '23 Report  :  
+
+---
+
+    Q&A Format for Fuzzy Search - IHRD Tharang '23    
+
+1.   Q:   What was IHRD Tharang '23?  
+     A:   IHRD Tharang '23 was a   national-level techno-cultural-entrepreneurial festival   organized by the   Institute of Human Resources Development (IHRD)   from   February 2-6, 2023  , at the   College of Engineering, Chengannur  . It featured   technical competitions, cultural events, workshops, an expo, and a job fair  .  
+
+2.   Q:   What was the theme of IHRD Tharang '23?  
+     A:   The theme was   "Science, Youth, and Leadership"  , promoting   scientific inquiry, innovation, and leadership skills   among participants.  
+
+3.   Q:   What were the main events at IHRD Tharang '23?  
+     A:   Events included   technical challenges, cultural performances, project expos, startup showcases, coding competitions, AI workshops, and a large-scale job fair  .  
+
+4.   Q:   What was the purpose of the committees at Tharang '23?  
+     A:   Various committees were formed to   manage event logistics, publicity, technical support, finance, sponsorships, food, transportation, crisis management, and cultural programs  .  
+
+5.   Q:   What was the significance of the Expo Stall at Tharang '23?  
+     A:   The   Expo Stall   showcased   innovative projects, research developments, and emerging technologies  , providing participants with hands-on experience.  
+
+6.   Q:   How was food and accommodation managed during Tharang '23?  
+     A:   The   Food Committee   ensured quality catering and hygiene, while the   Accommodation Committee   managed lodging for participants, faculty, and guests.  
+
+7.   Q:   What role did the Publicity and Media Committees play at Tharang '23?  
+     A:   These committees handled   branding, online promotions, live event coverage, photography, videography, and social media engagement  .  
+
+8.   Q:   What awards and recognitions were given at Tharang '23?  
+     A:   Awards were distributed for   competition winners, best-performing colleges, top projects, and Lucky Dip prizes, including laptops, smartphones, and smartwatches  .  
+
+9.   Q:   What was the purpose of the Crisis Management Committee?  
+     A:   This committee was responsible for   handling emergencies, ensuring safety measures, and providing medical assistance when needed  .  
+
+10.   Q:   What was the impact of IHRD Tharang '23?  
+      A:   Tharang '23   brought together thousands of participants, promoted technical and cultural excellence, connected students with industry experts, and provided networking and job opportunities  .  
+
+---
+    Q&A Format for Fuzzy Search - IHRD Tharang '23    
+
+1.   Q:   What was IHRD Tharang '23?  
+     A:   IHRD Tharang '23 was a national-level techno-cultural-entrepreneurial festival organized by the Institute of Human Resources Development (IHRD) from February 2-6, 2023, at the College of Engineering, Chengannur. It featured technical competitions, cultural events, workshops, an expo, and a job fair.  
+
+2.   Q:   What were the major committees formed for IHRD Tharang '23?  
+     A:   Various committees were established to manage event logistics, including the Organizing Committee, Advisory Committee, Technical Committee, Programme Committee, Finance Committee, Publicity Committee, Media Committee, Expo Stall Committee, Food Committee, Accommodation Committee, Sponsorship Committee, Crisis Management Committee, Web Committee, Light & Sound Committee, Registration Committee, and Health Committee. These committees played a crucial role in ensuring the smooth execution of the festival.  
+
+3.   Q:   What was the purpose of the IHRD Meetup?  
+     A:   The IHRD Meetup was a gathering of selected students and faculty from each IHRD institution. It aimed to create awareness about the festival, assign roles and responsibilities, and foster collaboration between institutions. The event ensured that students from different campuses could actively contribute to Tharang '23.  
+
+4.   Q:   How was the name "IHRD Tharang" chosen?  
+     A:   A naming contest was held within the IHRD community, and the name "Tharang," meaning waves, was suggested by Priyanka S from the College of Engineering Chengannur and Mushin M from CAS Chelakkara. They were honored with special prizes for their contribution. The name symbolized movement, transformation, and limitless potential.  
+
+5.   Q:   What was the significance of the IHRD Tharang logo?  
+     A:   The logo was designed to represent the waves of innovation, transformation, and limitless potential of the event. A student from the College of Engineering Chengannur designed the winning logo and was awarded a special prize. The logo became the official visual identity of the festival.  
+
+6.   Q:   Who launched the official website of IHRD Tharang '23?  
+     A:   The official website (tharang.ihrd.ac.in) was launched by Kerala’s Minister for Fisheries, Culture & Youth Affairs, Saji Cheriyan, at the College of Engineering Chengannur. The website served as a platform for event updates, participant registrations, and engagement with the IHRD community.  
+
+7.   Q:   What was the IHRD Tharang '23 theme song?  
+     A:   The theme song 'Uyarnnu Uyarnnu Varukayayi,' written by P. Prem and composed by Sajikumar Panthalacode, was sung by Indian playback singer Pradeep Somasundaram. The song captured the essence of the event with its inspiring lyrics and melody, resonating with participants and the audience alike.  
+
+8.   Q:   What was the IHRD Tharang '23 promo video?  
+     A:   The promo video "Celebrate Your Memories" was released on YouTube and the official Tharang website. It was directed by Alen Thomas, with contributions from Sourav J Raju, Vaisakh R Nair, and cinematography by Fuhad Sanin. The video captured the excitement and energy of Tharang '23, serving as a promotional highlight.  
+
+9.   Q:   What were the pre-events conducted for IHRD Tharang '23?  
+     A:   Pre-events included marathons, donation camps, flash mobs, webinars, talks, industrial visits, hackathons, competitions, project/prototype presentations, workshops, and training sessions. These events were organized across IHRD institutions to engage students and build momentum leading up to the festival.  
+
+10.   Q:   How were institutions ranked at IHRD Tharang '23?  
+     A:   Institutions earned points for event participation, pre-event performances, branding efforts, startup launches, and collaborations. The Overall Champion and Best Institution Awards were determined based on accumulated points. Points were awarded for both on-campus and external participation.  
+
+11.   Q:   What was the point system for Tharang '23 events?  
+     A:   Points were awarded for pre-event participation, innovation tracks, science workshops, entrepreneurship competitions, social impact projects, and youth leadership activities. Special points were also given for institution branding, startup launches, and collaborative events. Institutions that performed exceptionally well were recognized during the award ceremony.  
+
+12.   Q:   What were the major special dates of IHRD Tharang '23?  
+     A:   Key dates included December 14, 2022, for the Logo Launch, December 15, 2022, for the last date for institution branding report submission, January 25, 2023, as the deadline for pre-events and report submission, and February 5, 2023, for the award ceremony and pre-event winners' announcement. These dates played a crucial role in structuring the event timeline and ensuring proper execution.  
+
+---  
+Here’s an updated   Q&A format   incorporating the latest details from   IHRD Tharang '23 Report  :  
+
+---
+
+    Q&A Format for Fuzzy Search - IHRD Tharang '23    
+
+1.   Q:   What was the publicity campaign for IHRD Tharang '23?  
+     A:   The publicity campaign included   flash mobs, rap songs, talk series, campus ambassador programs, institutional campaigns, strategic partnerships, mic publicity, visual materials, and gaming tournaments  . These activities ensured extensive coverage and engagement.  
+
+2.   Q:   What was the significance of the IHRD Tharang '23 rap song?  
+     A:   The rap song   "Contrivance"   was composed by   Vivek Vijayan   and performed by   Esther Varghese and Nived Vilson P  . It embodied the spirit of Tharang with lyrics about resilience, unity, and passion.  
+
+3.   Q:   How did the statewide flashmob contribute to the publicity of Tharang '23?  
+     A:   The flashmob took place in   shopping malls, public parks, and college campuses  , creating excitement and drawing public attention to the festival. It showcased talent, creativity, and unity among the IHRD community.  
+
+4.   Q:   What were the key topics covered in the Mimamsa Talk Series?  
+     A:   Topics included   entrepreneurship, career guidance, AI, cybersecurity, cloud computing, 3D printing, space careers, and social responsibility  . Esteemed speakers like   M.P. Joseph, Sheela Kochouseph, Nabeel Koya, and Dr. Jeyakrishnan P   led these discussions.  
+
+5.   Q:   What was the role of the Campus Ambassador Program?  
+     A:   The program recruited students from various institutions to promote Tharang '23, encourage participation, and create awareness. The best ambassadors were awarded prizes and incentives.  
+
+6.   Q:   How did IHRD Tharang '23 collaborate with Radio Mango?  
+     A:   Radio Mango helped amplify the event's message through   radio spots, interviews, and promotional campaigns  , reaching a vast audience across Kerala.  
+
+7.   Q:   What were the major tournaments organized for Tharang '23?  
+     A:   Tournaments included   HackLeague (24-hour hackathon), All Kerala Volleyball Tournament, eSports competitions (Valorant, eFootball, Call of Duty), and classic arcade games  .  
+
+8.   Q:   What was the "My Stamp" initiative at Tharang '23?  
+     A:   The   Postal Department   launched a special   "My Stamp" program  , inaugurated by   Dr. V. A. Arun Kumar  , to commemorate the event and showcase collaboration between academia and government.  
+
+9.   Q:   What were the key highlights of the IHRD Tharang '23 inauguration?  
+     A:   The inauguration on   February 2, 2023  , featured a   flag-hoisting by Minister Dr. R. Bindu, a presidential address by Minister Saji Cheriyan, and a dance performance by Navya Nair  . The theme song   "Uyarnnu Uyarnnu Varukayayi"   was played during the ceremony.  
+
+10.   Q:   What were the main venues for Tharang '23 events?  
+      A:   Events were held at the   College of Engineering Chengannur  , utilizing spaces like the   main stage, open auditorium, classrooms, SDPK Room, AC Auditorium, and central courts  .  
+
+11.   Q:   What were the top-ranked institutions at IHRD Tharang '23?  
+      A:     CAS, Chelakkara   secured   1st place   with   39,725 points  , followed by   CAS Adoor (16,800 points)   and   KKMTPC Mala (11,189 points)  .  
+
+12.   Q:   What were the key technical competitions at Tharang '23?  
+      A:   Events included   Contraption, Circuit Showdown, Area 51, Tik-Tik Boom, Bridge-a-Ton, Line Chaser, Tech Quiz, Key Mismash, Circuitathon, and Formula GSM  .  
+
+13.   Q:   What were the major hackathons conducted at Tharang '23?  
+      A:   Hackathons included   Conqueror, Errorend, Radiant, and HackLeague  , covering   software and hardware innovation challenges  .  
+
+14.   Q:   What were the most attended workshops at Tharang '23?  
+      A:   Workshops covered   Flutter, Data Science, AI, Cybersecurity, Cloud Computing, PCB Designing, Embedded Systems, and 3D Printing  , attracting hundreds of participants.  
+
+15.   Q:   What were the gaming competitions at IHRD Tharang '23?  
+      A:   Games included   Valorant, eFootball, Robo Soccer, and Robo Sumo  , with online and on-campus tournaments.  
+
+16.   Q:   What were the key seminars at IHRD Tharang '23?  
+      A:   Seminars included   "Knowledge Exchange & the Information-Based World," "Education in the Age of AI," and "Technical Education & Social Responsibility"  , with expert speakers from academia and industry.  
+
+17.   Q:   What was the III Conclave at IHRD Tharang '23?  
+      A:   The   Industrialists', Innovators', and Investors' (III) Conclave   featured   startup motivation talks, AI & ML training by Google Crowdsource, UX career insights, and product growth strategies  .  
+
+18.   Q:   What was the R&D Conclave at IHRD Tharang '23?  
+      A:   The R&D Conclave featured discussions on   semiconductor industries, VLSI research, AI applications, and interdisciplinary innovation  , with experts from IITs and industry.  
+
+---
+
+    Q&A Format for Fuzzy Search - IHRD Tharang '23    
+
+1.   Q:   What was the Cyber Security panel discussion at Tharang '23?  
+     A:   The Cyber Security panel discussion was held on February 5, 2023, at the SDPK Room, College of Engineering Chengannur. It was chaired by Sri Bijumon ES, Superintendent of Police, Vigilance Thiruvananthapuram. Panelists included Mr. Raj Kumar T (Cyber Security Professor, CE Kallooppara), Mr. Nabeel Koya A (Scientist, CDAC), and Mr. Vipin George (Cyber Forensicator & Computer Engineer). The discussion covered cyber attacks, ethical hacking, and data security, with around 60 attendees.  
+
+2.   Q:   What was the IEEE virtual talk at Tharang '23 about?  
+     A:   The "Learning and Exploring in the Online Era" virtual talk was conducted by Quincy Larson, founder of freeCodeCamp, on February 3, 2023, at 6:45 PM. Over 100 students attended, discussing free coding resources, alternative learning platforms, and personal career development.  
+
+3.   Q:   What were the cultural competitions held at Tharang '23?  
+     A:   Cultural competitions took place from February 3-5, 2023, including Mime, Vocal Range, Step into Rhythm, Flash Step, Radiant Stroke (Painting), Quizardry, Just-A-Minute, Sudoku, Rubik’s Cube, and Freeze Frame (Photography).  
+
+4.   Q:   Who were the winners of the cultural competitions at Tharang '23?  
+     A:   The winners included CE Kallooppara for the Mime Competition, Bhavana Baiju from CE Kallooppara for Vocal Range, St. Paul’s Kalamassery for Step into Rhythm, Sethu Thambi from CAS Kaduthuruthy for Radiant Stroke, Sonu S and team from CE Kallooppara for Quizardry, and Athul S K from CAS Kundara for Sudoku.  
+
+5.   Q:   What was the AR/VR Zone at Tharang '23?  
+     A:   The AR/VR Zone was open from February 3-5, 2023, providing immersive tech experiences for college and school students at venues 301, 302, 303, 307, and 311 for college-level participants and 309, 310, and 311 for school-level participants.  
+
+6.   Q:   What was the Project Expo at Tharang '23?  
+     A:   The Project Expo, held from February 3-5, 2023, featured over 120 student projects in areas such as IoT, Cyber Security, Web Technologies, and Embedded Systems. It attracted more than 200 participants, including students from technical colleges, arts colleges, and engineering colleges.  
+
+7.   Q:   Who were the winners of the Project Expo at Tharang '23?  
+     A:   The winners included MTHSS Kaloor for Home Automation in the High School Category, MTHSS Kaloor for Mars Rover in the Higher Secondary Category, CE Kallooppara for Gesture & Voice Controlled Wheelchair in the College Hardware Category, and CE Vazhakkadu for Web App Synchronization in the College Software Category.  
+
+8.   Q:   What was the IHRD Historical Gallery at Tharang '23?  
+     A:   The IHRD Historical Gallery showcased the history and achievements of the Institute of Human Resources Development (IHRD) through photographs, documents, and memorabilia, offering visitors a visual journey through IHRD's evolution.  
+
+9.   Q:   What were the major pro shows at Tharang '23?  
+     A:   The pro shows included a Bharatanatyam concert by Navya Nair on February 2, 2023, a musical event with Jassie Gift & Resmi Satheesh on February 3, 2023, Sithara’s Project Malabaricus on February 4, 2023, and a performance by Pradip Somasundaran & College Band on February 5, 2023.  
+
+10.   Q:   What was the closing ceremony of Tharang '23?  
+      A:   Held on February 5, 2023, at 4:30 PM, the closing ceremony featured speeches by Dr. P. Suresh Kumar (IHRD Director) and Shri. A.N. Shamseer (Kerala Niyamasabha Speaker). The V CEC app version 2.0 was unveiled, and winners were awarded cash prizes, trophies, and mementos.  
+
+11.   Q:   Who were the top-ranking institutions at Tharang '23?  
+      A:   The overall champion was College of Applied Science, Chelakkara, with 40,425 points, followed by College of Applied Science, Adoor, with 17,825 points. The Best Engineering College was CE Kallooppara, with 10,009 points, while the Best Model Polytechnic College was KKMMPTC Mala, with 11,689 points. THSS Perinthalmanna was recognized as the Best Technical Higher Secondary School with 5,700 points.  
+
+12.   Q:   What was the IHRD Job Fair 1.0 at Tharang '23?  
+      A:   The job fair, held on February 6, 2023, was organized by the Training and Placement Cell (CE Chengannur) in collaboration with KKEM-K-DISC. It featured over 17 direct recruiters and 1,322 companies through the DWMS portal, with more than 3,000 job seekers registered.  
+
+13.   Q:   What was the Lucky Dip event at Tharang '23?  
+      A:   The Lucky Dip contest offered prizes such as laptops, smartphones, smartwatches, AirPods, dinner sets, and headphones. Winners were selected randomly, and Ananthu Gokul won the first prize, a laptop.  
+
+14.   Q:   What was the conclusion of IHRD Tharang '23?  
+      A:   IHRD Tharang '23 was a celebration of talent, innovation, and creativity, with over 100 events, more than 5,000 participants, and over 3,000 job seekers. The festival concluded with a promise to continue fostering student excellence, innovation, and leadership.
+
+
+
+
+
+
+
