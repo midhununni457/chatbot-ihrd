@@ -1,41 +1,29 @@
 Q: What is IJSTI?
-A: IJSTI stands for International Journal of Science, Technology, and Innovation, a peer-reviewed journal focusing on advancements in science and technology.
+A: The International Journal of Science, Technology, and Innovation (IJSTI) is a peer-reviewed journal dedicated to advancing knowledge and fostering interdisciplinary research in various scientific and technological fields. It serves as a platform for scholars, researchers, and professionals to publish groundbreaking studies and contribute to global scientific discussions.
 
 Q: When was IJSTI launched?
-A: IJSTI was launched in 2024.
+A: IJSTI was launched in 2024 as part of IHRD’s initiative to promote high-quality research and innovation in science and technology.
 
 Q: How often is IJSTI published?
-A: IJSTI publishes two issues per year.
+A: The journal is published twice a year, ensuring that researchers and professionals have a regular platform to share their findings and insights.
 
 Q: In what format is IJSTI published?
-A: IJSTI is published in online format.
+A: IJSTI is an online journal, making research papers and articles easily accessible to a global audience.
 
 Q: What subjects does IJSTI cover?
-A: IJSTI covers multidisciplinary subjects, including:
--Engineering
--Computer Science
--Biological Sciences
--Environmental Sciences
--Materials Science
--Physics
+A: IJSTI covers a wide range of multidisciplinary subjects, including engineering, computer science, biological sciences, environmental sciences, materials science, and physics. The journal encourages discussions on contemporary scientific and technological challenges, along with innovative solutions.
 
 Q: What is the main goal of IJSTI?
-A: The journal aims to advance knowledge and foster interdisciplinary research in science and technology.
+A: The primary goal of IJSTI is to disseminate high-quality research and foster advancements in science, technology, and innovation. By providing a platform for researchers, practitioners, and policymakers, the journal aims to bridge the gap between theoretical research and real-world applications.
 
 Q: What is IJSTI’s editorial policy?
-A:
--Peer-reviewed journal
--Focuses on high-quality research
--Encourages discussions on contemporary engineering and technological challenges
--Supports solutions for societal and environmental challenges
+A: IJSTI follows a rigorous peer-review process to ensure that only high-quality research is published. The journal is committed to maintaining editorial independence, making decisions based solely on scientific merit and relevance. It also encourages theoretical research and numerical studies that contribute to solving contemporary engineering and technological challenges.
+
+Q: What is IJSTI’s publication policy?
+A: IJSTI accepts original research articles related to science, technology, and innovation. The journal focuses on theoretical research, computational advancements, and solutions for societal and environmental challenges. It aims to provide a forum for discussing technological modifications that can be adapted for future developments.
 
 Q: What is IJSTI’s editorial independence policy?
-A:
--Decisions are made independently by the editorial board and reviewers
--No influence from advertisers or external entities
--Ensures freedom from bias based on scientific merit
+A: Editorial decisions at IJSTI are made independently by the editorial board and reviewers, without any external influence from advertisers or sponsors. The journal ensures that all published content is unbiased and based on scientific merit.
 
 Q: Where can I access IJSTI articles?
-A: IJSTI articles can be accessed at:
--https://ijsti.ihrd.ac.in/index.php/articles-issue/latest-issue
--https://ijsti.ihrd.ac.in/index.php
+A: IJSTI articles can be accessed online through the journal’s official website at https://ijsti.ihrd.ac.in/index.php/articles-issue/latest-issue and https://ijsti.ihrd.ac.in/index.php.
