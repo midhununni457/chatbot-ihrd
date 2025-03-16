@@ -82,7 +82,7 @@ async def run_server():
             # New API (10.0+)
             ws_server = await websockets.serve(
                 websocket_handler, 
-                "0.0.0.0",
+                "localhost",
                 8765, 
                 ping_interval=30,
                 ping_timeout=10
@@ -91,13 +91,13 @@ async def run_server():
             # Legacy API
             ws_server = await websockets.serve(
                 lambda ws, path: websocket_handler(ws, path),
-                "0.0.0.0",
+                "localhost",
                 8765,
                 ping_interval=30,
                 ping_timeout=10
             )
             
-        print("WebSocket server started at ws://0.0.0.0:8765")
+        print("WebSocket server started at ws://localhost:8765")
     except Exception as e:
         print(f"Failed to start WebSocket server: {str(e)}")
         return
@@ -113,9 +113,9 @@ async def run_server():
         
         runner = web.AppRunner(app)
         await runner.setup()
-        site = web.TCPSite(runner, '0.0.0.0', 8080)
+        site = web.TCPSite(runner, 'localhost', 8080)
         await site.start()
-        print("HTTP server started at http://0.0.0.0:8080")
+        print("HTTP server started at http://localhost:8080")
     except Exception as e:
         print(f"Failed to start HTTP server: {str(e)}")
         return
