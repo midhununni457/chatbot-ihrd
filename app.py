@@ -26,7 +26,7 @@ ALL_QA_PAIRS = None
 
 PORT = int(os.environ.get("PORT", 8080))
 HOST = os.environ.get("HOST", "0.0.0.0")
-WS_PORT = int(os.environ.get("WS_PORT", PORT))
+WS_PORT = int(os.environ.get("WS_PORT", 8081))
 SECURE = os.environ.get("SECURE", "0") == "1"
 
 async def websocket_handler(websocket, path=None):

@@ -24,7 +24,7 @@ function connectWebSocket() {
   ) {
     wsUrl = `${wsProtocol}//${window.location.host}`;
   } else {
-    const wsPort = window.location.port || (isSecure ? "443" : "80");
+    const wsPort = "8081";
     wsUrl = `${wsProtocol}//${window.location.hostname}:${wsPort}`;
   }
 
