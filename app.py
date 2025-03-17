@@ -2,10 +2,10 @@ import os
 import asyncio
 import websockets
 import json
+import ssl
 from aiohttp import web
 from main import load_qa_pairs, chatbot_response
 
-# Get all QA pairs from all files in the processed directory
 def load_all_qa_pairs():
     script_dir = os.path.dirname(os.path.abspath(__file__))
     processed_dir = os.path.join(script_dir, "data", "processed")
@@ -22,14 +22,16 @@ def load_all_qa_pairs():
     
     return all_qa_pairs
 
-# Global QA pairs to avoid reloading for every connection
 ALL_QA_PAIRS = None
 
-# WebSocket handler
+PORT = int(os.environ.get("PORT", 8080))
+HOST = os.environ.get("HOST", "0.0.0.0")
+WS_PORT = int(os.environ.get("WS_PORT", PORT))
+SECURE = os.environ.get("SECURE", "0") == "1"
+
 async def websocket_handler(websocket, path=None):
     global ALL_QA_PAIRS
     
-    # Load QA pairs once if not already loaded
     if ALL_QA_PAIRS is None:
         ALL_QA_PAIRS = load_all_qa_pairs()
     
@@ -45,7 +47,6 @@ async def websocket_handler(websocket, path=None):
     except Exception:
         pass
 
-# HTTP route handlers
 async def index(request):
     try:
         with open(os.path.join(os.path.dirname(__file__), 'templates', 'index.html'), 'r', encoding='utf-8') as file:
@@ -70,39 +71,43 @@ async def get_script(request):
     except Exception:
         return web.Response(text="", status=404)
 
-# Main function to run both WebSocket and HTTP servers
 async def run_server():
-    # WebSocket server
     try:
-        # Check WebSockets version to handle API differences
         ws_version = websockets.__version__.split('.')
         major_version = int(ws_version[0]) if ws_version and ws_version[0].isdigit() else 0
         
+        ssl_context = None
+        if SECURE:
+            ssl_context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
+            ssl_context.load_cert_chain(
+                os.environ.get("SSL_CERT", "fullchain.pem"),
+                os.environ.get("SSL_KEY", "privkey.pem")
+            )
+        
         if major_version >= 10:
-            # New API (10.0+)
             ws_server = await websockets.serve(
                 websocket_handler, 
-                "localhost",
-                8765, 
+                HOST,
+                WS_PORT, 
                 ping_interval=30,
-                ping_timeout=10
+                ping_timeout=10,
+                ssl=ssl_context
             )
         else:
-            # Legacy API
             ws_server = await websockets.serve(
                 lambda ws, path: websocket_handler(ws, path),
-                "localhost",
-                8765,
+                HOST,
+                WS_PORT,
                 ping_interval=30,
-                ping_timeout=10
+                ping_timeout=10,
+                ssl=ssl_context
             )
             
-        print("WebSocket server started at ws://localhost:8765")
+        print(f"WebSocket server started at {'wss' if SECURE else 'ws'}://{HOST}:{WS_PORT}")
     except Exception as e:
         print(f"Failed to start WebSocket server: {str(e)}")
         return
     
-    # HTTP server
     try:
         app = web.Application()
         app.add_routes([
@@ -113,14 +118,13 @@ async def run_server():
         
         runner = web.AppRunner(app)
         await runner.setup()
-        site = web.TCPSite(runner, 'localhost', 8080)
+        site = web.TCPSite(runner, HOST, PORT)
         await site.start()
-        print("HTTP server started at http://localhost:8080")
+        print(f"HTTP server started at http://{HOST}:{PORT}")
     except Exception as e:
         print(f"Failed to start HTTP server: {str(e)}")
         return
     
-    # Keep the server running
     try:
         await asyncio.Future()
     except asyncio.CancelledError:

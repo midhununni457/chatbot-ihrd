@@ -1,4 +1,3 @@
-// Connect to WebSocket server
 let socket;
 const chatMessages = document.getElementById("chatMessages");
 const userInput = document.getElementById("userInput");
@@ -6,26 +5,32 @@ const chatForm = document.getElementById("chatForm");
 const connectionStatus = document.getElementById("connectionStatus");
 const reconnectButton = document.getElementById("reconnectButton");
 
-// Function to connect to WebSocket
 function connectWebSocket() {
-  // Close any existing connection
   if (socket) {
     socket.close();
   }
 
-  // Update status
   connectionStatus.textContent = "Connecting...";
-  connectionStatus.style.color = "#f0ad4e"; // Warning color
+  connectionStatus.style.color = "#f0ad4e";
 
-  // Get the current hostname for WebSocket connection
-  const protocol = window.location.protocol === "https:" ? "wss:" : "ws:";
-  const wsUrl = `${protocol}//${window.location.hostname}:8765`;
+  const isSecure = window.location.protocol === "https:";
+  const wsProtocol = isSecure ? "wss:" : "ws:";
 
-  // Create new WebSocket connection
+  let wsUrl;
+
+  if (
+    window.location.hostname.includes("herokuapp.com") ||
+    window.location.hostname.includes("onrender.com")
+  ) {
+    wsUrl = `${wsProtocol}//${window.location.host}`;
+  } else {
+    const wsPort = window.location.port || (isSecure ? "443" : "80");
+    wsUrl = `${wsProtocol}//${window.location.hostname}:${wsPort}`;
+  }
+
   try {
     socket = new WebSocket(wsUrl);
 
-    // WebSocket event listeners
     socket.onopen = function (event) {
       connectionStatus.textContent = "Connected";
       connectionStatus.style.color = "#28a745";
@@ -61,17 +66,14 @@ function connectWebSocket() {
   }
 }
 
-// Initial connection
 connectWebSocket();
 
-// Reconnect button handler
 if (reconnectButton) {
   reconnectButton.addEventListener("click", function () {
     connectWebSocket();
   });
 }
 
-// Form submission handler
 chatForm.addEventListener("submit", function (e) {
   e.preventDefault();
   const message = userInput.value.trim();
@@ -79,14 +81,12 @@ chatForm.addEventListener("submit", function (e) {
   if (message) {
     displayUserMessage(message);
 
-    // Check if socket is connected before sending
     if (socket && socket.readyState === WebSocket.OPEN) {
       socket.send(message);
     } else {
       displayBotMessage(
         "I'm currently disconnected from the server. Please wait while I reconnect..."
       );
-      // Try to reconnect
       connectWebSocket();
     }
 
@@ -94,7 +94,6 @@ chatForm.addEventListener("submit", function (e) {
   }
 });
 
-// Display user message
 function displayUserMessage(message) {
   const messageDiv = document.createElement("div");
   messageDiv.className = "message user-message";
@@ -112,7 +111,6 @@ function displayUserMessage(message) {
   scrollToBottom();
 }
 
-// Display bot message
 function displayBotMessage(message) {
   const messageDiv = document.createElement("div");
   messageDiv.className = "message bot-message";
@@ -120,7 +118,6 @@ function displayBotMessage(message) {
   const contentDiv = document.createElement("div");
   contentDiv.className = "message-content";
 
-  // Format the message to handle line breaks and lists
   const formattedMessage = message.replace(/\n-/g, "<br>-");
 
   const paragraph = document.createElement("p");
@@ -133,7 +130,6 @@ function displayBotMessage(message) {
   scrollToBottom();
 }
 
-// Scroll chat to bottom
 function scrollToBottom() {
   chatMessages.scrollTop = chatMessages.scrollHeight;
 }

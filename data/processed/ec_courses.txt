@@ -1,0 +1,47 @@
+Q: What is the total intake capacity for B.Tech courses across IHRD Engineering Colleges for the academic year 2024-25?
+A: The total intake for B.Tech programs across IHRD Engineering Colleges for the 2024-25 academic year is 600 seats across different branches, including Computer Science (CS), Electronics and Communication (EC), Electrical and Electronics (EEE), Mechanical Engineering (ME), and other specialized fields.
+
+Q: What is the total intake capacity for M.Tech courses in IHRD Engineering Colleges?
+A: The total intake for M.Tech programs is 60 seats, distributed across specializations such as VLSI, Data Science (DS), and Embedded Systems (EM).
+
+Q: What is the total intake for undergraduate programs under PGRMS in IHRD institutions?
+A: The total intake for undergraduate programs under PGRMS is 270 seats, with branches including Computer Science (CS), Cyber Security (CS CYBER S), Electrical and Electronics (EEE), and Communication and Signal Processing (CFIS).
+
+Q: What is the total intake for postgraduate programs under PGRMS?
+A: The total intake for postgraduate programs under PGRMS is 18 seats, allocated to specialized courses such as Cyber Security and CFIS.
+
+Q: What is the total intake for BBA and BCA courses in IHRD Engineering Colleges?
+A: The total intake for BBA and BCA programs is 120 seats each, making a total of 240 seats.
+
+Q: What is the total intake for MCA courses in IHRD institutions?
+A: The total intake for MCA (Master of Computer Applications) is 30 seats.
+
+Q: What is the intake for B.Tech courses at Model Engineering College, Thrikkakara MEC?
+A: Model Engineering College, Thrikkakara, offers 600 seats for B.Tech, distributed as 120 seats in Electronics and Communication (EC), 180 seats in Computer Science (CS), 60 seats in Electronics and Biomedical Engineering (EBE), 60 seats in Electrical and Electronics (EEE), 60 seats in Mechanical Engineering (ME), 60 seats in Computer Science and Business Systems (CS BS), and 60 seats in Electronics Engineering (EE VLSI).
+
+Q: What is the intake for M.Tech courses at Model Engineering College, Thrikkakara MEC?
+A: The total intake for M.Tech at Model Engineering College is 60 seats, with 24 seats in VLSI, 18 seats in Embedded Systems (EM), and 18 seats in Data Science (DS).
+
+Q: What is the intake for B.Tech courses at College of Engineering, Kottarakkara?
+A: College of Engineering, Kottarakkara, has 360 seats for B.Tech, with 60 seats in Electronics and Communication (EC), 60 seats in Mechanical Engineering (ME), and 60 seats in Data Science (CS DS).
+
+Q: What is the intake for PGRMS and MCA at College of Engineering, Kottarakkara?
+A: The college offers 240 seats under PGRMS, with 120 seats for BBA and BCA courses. The total intake for MCA is 60 seats.
+
+Q: What is the intake for B.Tech courses at College of Engineering, Chengannur?
+A: College of Engineering, Chengannur, offers 420 seats for B.Tech, distributed as 120 seats in Computer Science (CS), 180 seats in Electronics and Communication (EC), 60 seats in Electrical and Electronics (EEE), and 60 seats in Artificial Intelligence and Machine Learning (AI ML).
+
+Q: What is the intake for MCA at College of Engineering, Chengannur?
+A: The MCA intake at College of Engineering, Chengannur is 60 seats.
+
+Q: What is the intake for B.Tech courses at College of Engineering, Adoor?
+A: College of Engineering, Adoor, offers 300 seats for B.Tech, including 120 seats in Computer Science (CS), 60 seats in Electronics and Communication (EC), 60 seats in Electrical and Electronics (EEE), and 60 seats in Artificial Intelligence and Machine Learning (AI ML).
+
+Q: What is the intake for B.Tech at College of Engineering, Karunagappally?
+A: College of Engineering, Karunagappally, has 151 seats distributed across Computer Science (CS), Electronics and Communication (EC), Electrical and Electronics (EEE), and Artificial Intelligence & Data Science (AI DS).
+
+Q: What is the intake for B.Tech at College of Engineering, Attingal?
+A: College of Engineering, Attingal, offers 120 seats for B.Tech, with 90 seats in Computer Science (CS) and 30 seats in Electronics and Communication (EC).
+
+Q: What is the intake for B.Tech at College of Engineering, Cherthala?
+A: College of Engineering, Cherthala, has a total of 300 seats, with allocations for Computer Science (CS), Electronics and Communication (EC), Electrical and Electronics (EEE), and Artificial Intelligence & Machine Learning (AI ML).
