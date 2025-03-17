@@ -1,0 +1,10 @@
+services:
+  # A web service
+  - type: web
+    name: ihrd-chatbot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: RENDER=1 python app.py
+    envVars:
+      - key: PORT
+        sync: false

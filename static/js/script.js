@@ -16,17 +16,11 @@ function connectWebSocket() {
   const isSecure = window.location.protocol === "https:";
   const wsProtocol = isSecure ? "wss:" : "ws:";
 
+  // WebSocket URL - check if we're on a hosting platform
   let wsUrl;
 
-  if (
-    window.location.hostname.includes("herokuapp.com") ||
-    window.location.hostname.includes("onrender.com")
-  ) {
-    wsUrl = `${wsProtocol}//${window.location.host}`;
-  } else {
-    const wsPort = "8081";
-    wsUrl = `${wsProtocol}//${window.location.hostname}:${wsPort}`;
-  }
+  // For Render and other platforms that use the same port for HTTP and WebSocket
+  wsUrl = `${wsProtocol}//${window.location.host}/ws`;
 
   try {
     socket = new WebSocket(wsUrl);
@@ -35,18 +29,21 @@ function connectWebSocket() {
       connectionStatus.textContent = "Connected";
       connectionStatus.style.color = "#28a745";
       reconnectButton.style.display = "none";
+      console.log("WebSocket connected successfully");
     };
 
     socket.onclose = function (event) {
       connectionStatus.textContent = "Disconnected";
       connectionStatus.style.color = "#dc3545";
       reconnectButton.style.display = "inline-block";
+      console.log("WebSocket connection closed", event);
     };
 
     socket.onerror = function (error) {
       connectionStatus.textContent = "Error connecting to server";
       connectionStatus.style.color = "#dc3545";
       reconnectButton.style.display = "inline-block";
+      console.error("WebSocket error:", error);
     };
 
     socket.onmessage = function (event) {
@@ -54,19 +51,24 @@ function connectWebSocket() {
         const response = JSON.parse(event.data);
         displayBotMessage(response.response);
       } catch (error) {
+        console.error("Error processing message:", error);
         displayBotMessage(
           "Sorry, I encountered an error processing your request."
         );
       }
     };
   } catch (error) {
+    console.error("Error creating WebSocket:", error);
     connectionStatus.textContent = "Error connecting to server";
     connectionStatus.style.color = "#dc3545";
     reconnectButton.style.display = "inline-block";
   }
 }
 
-connectWebSocket();
+// Initialize connection when page loads
+window.addEventListener("load", function () {
+  connectWebSocket();
+});
 
 if (reconnectButton) {
   reconnectButton.addEventListener("click", function () {
