@@ -1,7 +1,7 @@
 import os
 from web_app import app, initialize_chatbot
 
-def main(debug=True):
+def main(debug=False):  # Set default to False for production
     """Run the web application with the given configuration."""
     # Initialize the chatbot at startup
     initialize_chatbot()
@@ -15,4 +15,4 @@ def main(debug=True):
     print(f"Web interface is running at http://localhost:{port}")
 
 if __name__ == "__main__":
-    main()
+    main(debug=False)  # Force debug mode off

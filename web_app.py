@@ -7,6 +7,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 app = Flask(__name__)
+# Set to production mode
+app.config['ENV'] = 'production'
+app.config['DEBUG'] = False
 
 # Initialize chatbot
 api_key = os.getenv("GEMINI_API_KEY")
@@ -77,4 +80,4 @@ if __name__ == '__main__':
     initialize_chatbot()
     # Use PORT environment variable if available (for Render deployment)
     port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port)
+    app.run(host='0.0.0.0', port=port, debug=False)
