@@ -1,6 +1,6 @@
-# PDF-based RAG Chatbot
+# PDF-based RAG Chatbot (Web Application)
 
-A command-line chatbot that answers questions based on PDF documents using Retrieval-Augmented Generation (RAG) with Google's Gemini API.
+A web-based chatbot that answers questions based on PDF documents using Retrieval-Augmented Generation (RAG) with Google's Gemini API.
 
 ## Setup
 
@@ -21,10 +21,11 @@ A command-line chatbot that answers questions based on PDF documents using Retri
    ```
    You can obtain a Gemini API key from https://ai.google.dev/
 5. Place your PDF documents in the `data` folder
-6. Run the chatbot:
+6. Run the web application:
    ```
-   python main.py
+   python run_webapp.py
    ```
+7. Open your browser and navigate to: http://localhost:5000
 
 ## How the RAG Process Works
 
@@ -51,47 +52,25 @@ The chatbot uses a Retrieval-Augmented Generation (RAG) approach, which consists
 4. **Generation with Gemini**:
    - The retrieved context and user's question are sent to Google's Gemini API
    - Gemini generates a natural language response based on the given context
-   - The response cites the source document where appropriate
+   - The response is displayed to the user in the web interface
 
-## Usage
+## Deployment
 
-### Running the Chatbot
+This application is configured for easy deployment on Render.com:
 
-Run the chatbot with default settings:
+1. Push your code to a Git repository
+2. In Render, create a new Web Service linked to your repository
+3. Render will automatically detect the configuration in `render.yaml`
+4. Add your Gemini API key as an environment variable in the Render dashboard
 
-```
-python main.py
-```
+## Environment Variables
 
-### Command Line Options
-
-The chatbot supports several command line options:
-
-```
-python main.py --reload        # Force reload PDFs and rebuild knowledge base
-python main.py --model MODEL   # Specify the Gemini model (default: models/gemini-1.5-flash-latest)
-python main.py --timeout SECS  # Set response timeout in seconds (default: 60)
-```
-
-### Available Commands
-
-Once the chatbot is running, you can use these commands:
-
-- Type your question and press Enter to get a response
-- Type `clear` or `reset` to clear conversation history
-- Type `exit`, `quit`, or `q` to exit the chatbot
-
-### Downloading Models
-
-If you want to use a local LLM model instead of Gemini API:
+Configure these variables in your `.env` file:
 
 ```
-python download_model.py       # Download recommended model based on your system
-python download_model.py --model tiny|small|medium|large  # Specify model size
-```
+# Required: Google Gemini API Key
+GEMINI_API_KEY=your_gemini_api_key_here
 
-After downloading, update your `.env` file to use the local model by setting:
-
-```
-MODEL_PROVIDER=local
+# Optional: Configure model
+MODEL_NAME=models/gemini-1.5-flash-latest
 ```
