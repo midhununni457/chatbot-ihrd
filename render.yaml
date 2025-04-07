@@ -1,10 +1,10 @@
 services:
-  # A web service
   - type: web
-    name: ihrd-chatbot
+    name: rag-chatbot
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: RENDER=1 python app.py
+    startCommand: gunicorn web_app:app
     envVars:
-      - key: PORT
-        sync: false
+      - key: PYTHON_VERSION
+        value: 3.10.0
+    autoDeploy: true

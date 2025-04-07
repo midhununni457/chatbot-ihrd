@@ -1,1 +1,1 @@
-web: RENDER=1 python app.py
+web: gunicorn web_app:app

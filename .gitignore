@@ -1,8 +1,19 @@
-venv/
-.venv/
+# Environment variables
+.env
 
+# Python
 __pycache__/
 *.py[cod]
+*$py.class
+venv/
+env/
 
-.env
-*.pem
+# Models directory
+models/
+
+# IDEs
+.vscode/
+.idea/
+
+# Logs
+*.log
