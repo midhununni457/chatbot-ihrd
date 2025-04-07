@@ -49,6 +49,26 @@ def reset():
         chatbot.reset_conversation()
     return jsonify({'status': 'Conversation reset'})
 
+@app.route('/api/reload', methods=['POST'])
+def reload_kb():
+    if chatbot:
+        chatbot.force_reload_knowledge_base()
+        return jsonify({'status': 'Knowledge base reloaded successfully'})
+    return jsonify({'error': 'Chatbot not initialized'}), 500
+
+@app.route('/api/status', methods=['GET'])
+def status():
+    if not chatbot:
+        initialize_chatbot()
+    
+    pdf_files = chatbot.pdf_processor.get_pdf_files()
+    kb_status = {
+        'pdf_count': len(pdf_files),
+        'pdf_files': [os.path.basename(f) for f in pdf_files],
+        'vector_store_initialized': chatbot.vector_store.fitted
+    }
+    return jsonify(kb_status)
+
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('index.html')

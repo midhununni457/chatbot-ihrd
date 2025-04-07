@@ -1,7 +1,8 @@
 import os
 from web_app import app, initialize_chatbot
 
-if __name__ == "__main__":
+def main(debug=True):
+    """Run the web application with the given configuration."""
     # Initialize the chatbot at startup
     initialize_chatbot()
     
@@ -9,6 +10,9 @@ if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
     
     # Start the Flask web server
-    app.run(host='0.0.0.0', port=port, debug=True)
+    app.run(host='0.0.0.0', port=port, debug=debug)
     
     print(f"Web interface is running at http://localhost:{port}")
+
+if __name__ == "__main__":
+    main()

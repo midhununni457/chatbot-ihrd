@@ -23,7 +23,9 @@ A web-based chatbot that answers questions based on PDF documents using Retrieva
 5. Place your PDF documents in the `data` folder
 6. Run the web application:
    ```
-   python run_webapp.py
+   python web_app.py
+   # Or alternatively:
+   python app.py
    ```
 7. Open your browser and navigate to: http://localhost:5000
 
@@ -73,4 +75,26 @@ GEMINI_API_KEY=your_gemini_api_key_here
 
 # Optional: Configure model
 MODEL_NAME=models/gemini-1.5-flash-latest
+
+# Optional: Web server port
+PORT=5000
+```
+
+## Project Structure
+
+```
+/
+├── app.py                   # Alternative entry point
+├── chatbot.py               # Core RAG chatbot functionality
+├── data/                    # Directory for PDF documents
+├── models/                  # Directory for saved vector store
+├── pdf_processor.py         # PDF text extraction and chunking
+├── requirements.txt         # Python dependencies
+├── static/                  # Web application static files
+│   ├── script.js            # Client-side JavaScript
+│   └── style.css            # CSS styles
+├── templates/               # Web application templates
+│   └── index.html           # Main web interface
+├── vector_store.py          # Vector embedding and similarity search
+└── web_app.py               # Flask web application
 ```

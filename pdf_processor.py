@@ -27,20 +27,33 @@ class PDFProcessor:
             reader = PdfReader(pdf_path)
             text = ""
             for page in reader.pages:
-                text += page.extract_text() + "\n"
-            return text
+                page_text = page.extract_text()
+                if page_text:
+                    text += page_text + "\n"
+            return self._preprocess_text(text)
         except Exception as e:
             print(f"Error extracting text from {pdf_path}: {e}")
             return ""
     
+    def _preprocess_text(self, text: str) -> str:
+        """Clean and normalize the extracted text."""
+        # Replace multiple newlines with single newline
+        text = '\n'.join(line for line in text.split('\n') if line.strip())
+        
+        # Replace multiple spaces with single space
+        text = ' '.join(text.split())
+        
+        return text
+    
     def split_text_into_chunks(self, text: str, 
-                               chunk_size: int = 1000, 
-                               chunk_overlap: int = 200) -> List[str]:
+                               chunk_size: int = 500,  # Smaller chunks
+                               chunk_overlap: int = 100) -> List[str]:
         """Split text into smaller chunks for processing."""
         text_splitter = RecursiveCharacterTextSplitter(
             chunk_size=chunk_size,
             chunk_overlap=chunk_overlap,
-            length_function=len
+            length_function=len,
+            separators=["\n\n", "\n", ". ", " ", ""]  # More specific separators
         )
         chunks = text_splitter.split_text(text)
         return chunks

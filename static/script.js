@@ -1,53 +1,60 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const chatMessages = document.getElementById("chatMessages");
+document.addEventListener("DOMContentLoaded", function () {
   const userInput = document.getElementById("userInput");
   const sendButton = document.getElementById("sendButton");
   const resetButton = document.getElementById("resetButton");
+  const reloadKbButton = document.getElementById("reloadKbButton");
+  const chatMessages = document.getElementById("chatMessages");
+  const statusIndicator = document.getElementById("statusIndicator");
+  const statusText = document.getElementById("statusText");
 
-  // Function to add a message to the chat
-  function addMessage(content, isUser = false) {
+  // Function to add a message to the chat interface
+  function addMessage(content, isUser = false, isSystem = false) {
     const messageDiv = document.createElement("div");
-    messageDiv.className = `message ${isUser ? "user-message" : "bot-message"}`;
 
-    const messageContent = document.createElement("div");
-    messageContent.className = "message-content";
-    messageContent.textContent = content;
+    if (isSystem) {
+      messageDiv.className = "system-message";
+      messageDiv.textContent = content;
+    } else {
+      messageDiv.className = `message ${
+        isUser ? "user-message" : "bot-message"
+      }`;
+      const messageContent = document.createElement("div");
+      messageContent.className = "message-content";
+      messageContent.textContent = content;
+      messageDiv.appendChild(messageContent);
+    }
 
-    messageDiv.appendChild(messageContent);
     chatMessages.appendChild(messageDiv);
 
-    // Auto scroll to bottom
+    // Scroll to bottom
     chatMessages.scrollTop = chatMessages.scrollHeight;
-
-    return messageDiv;
   }
 
-  // Function to add a loading message - simplified
-  function addLoadingMessage() {
-    const messageDiv = document.createElement("div");
-    messageDiv.className = "message bot-message";
+  // Function to display loading indicator
+  function showLoading() {
+    const loadingDiv = document.createElement("div");
+    loadingDiv.className = "message bot-message loading";
+    loadingDiv.id = "loadingMessage";
 
-    const messageContent = document.createElement("div");
-    messageContent.className = "message-content";
-    messageContent.textContent = "Thinking...";
+    const loadingContent = document.createElement("div");
+    loadingContent.className = "message-content";
+    loadingContent.innerHTML = 'Thinking<span class="loading-dots"></span>';
 
-    messageDiv.appendChild(messageContent);
-    chatMessages.appendChild(messageDiv);
-
-    // Auto scroll to bottom
+    loadingDiv.appendChild(loadingContent);
+    chatMessages.appendChild(loadingDiv);
     chatMessages.scrollTop = chatMessages.scrollHeight;
-
-    return messageDiv;
   }
 
-  // Function to send a message to the API
+  // Function to remove loading indicator
+  function hideLoading() {
+    const loadingMessage = document.getElementById("loadingMessage");
+    if (loadingMessage) {
+      loadingMessage.remove();
+    }
+  }
+
+  // Function to send message to server
   async function sendMessage(message) {
-    // Add user message to chat
-    addMessage(message, true);
-
-    // Add loading message
-    const loadingMessage = addLoadingMessage();
-
     try {
       const response = await fetch("/api/chat", {
         method: "POST",
@@ -59,68 +66,121 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const data = await response.json();
 
-      // Remove loading message
-      chatMessages.removeChild(loadingMessage);
+      hideLoading();
 
-      if (response.ok) {
-        // Add bot response to chat
-        addMessage(data.response);
+      if (data.error) {
+        addMessage(`Error: ${data.error}`);
       } else {
-        // Add error message
-        const errorDiv = addMessage(
-          `Error: ${data.error || "Something went wrong"}`
-        );
-        errorDiv.classList.add("error-message");
+        addMessage(data.response);
       }
     } catch (error) {
-      // Remove loading message
-      chatMessages.removeChild(loadingMessage);
-
-      // Add error message
-      const errorDiv = addMessage(`Error: Could not connect to the server`);
-      errorDiv.classList.add("error-message");
-    }
-  }
-
-  // Function to reset conversation
-  async function resetConversation() {
-    try {
-      await fetch("/api/reset", { method: "POST" });
-
-      // Clear chat messages
-      chatMessages.innerHTML = "";
-
-      // Add welcome message
+      hideLoading();
       addMessage(
-        "Welcome! Ask me questions about the documents in your data directory."
+        `An error occurred while connecting to the server. Please try again.`
       );
-    } catch (error) {
-      const errorDiv = addMessage(`Error: Could not reset the conversation`);
-      errorDiv.classList.add("error-message");
+      console.error("Error:", error);
     }
   }
 
-  // Event listeners
-  sendButton.addEventListener("click", () => {
+  // Handle send button click
+  sendButton.addEventListener("click", function () {
     const message = userInput.value.trim();
     if (message) {
-      sendMessage(message);
+      // Add user message to chat
+      addMessage(message, true);
+
+      // Clear input
       userInput.value = "";
+
+      // Show loading indicator
+      showLoading();
+
+      // Send message to server
+      sendMessage(message);
     }
   });
 
-  userInput.addEventListener("keypress", (e) => {
+  // Handle Enter key press
+  userInput.addEventListener("keypress", function (e) {
     if (e.key === "Enter") {
-      const message = userInput.value.trim();
-      if (message) {
-        sendMessage(message);
-        userInput.value = "";
-      }
+      sendButton.click();
+      e.preventDefault();
     }
   });
 
-  resetButton.addEventListener("click", resetConversation);
+  // Handle reset button click
+  resetButton.addEventListener("click", function () {
+    fetch("/api/reset", { method: "POST" })
+      .then((response) => response.json())
+      .then((data) => {
+        // Clear chat messages except the welcome message
+        while (chatMessages.children.length > 1) {
+          chatMessages.removeChild(chatMessages.lastChild);
+        }
+        // Add system message confirming reset
+        addMessage("Conversation has been reset.", false, true);
+      })
+      .catch((error) => {
+        console.error("Error resetting conversation:", error);
+      });
+  });
 
-  // Focus on input field when page loads
-  userInput.focus();
+  // Handle reload KB button click
+  reloadKbButton.addEventListener("click", function () {
+    // Change button text to show loading
+    reloadKbButton.textContent = "Reloading...";
+    reloadKbButton.disabled = true;
+
+    // Add system message
+    addMessage("Reloading knowledge base...", false, true);
+
+    fetch("/api/reload", { method: "POST" })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.status) {
+          addMessage(data.status, false, true);
+          // Update KB status
+          checkKbStatus();
+        } else if (data.error) {
+          addMessage(`Error: ${data.error}`, false, true);
+        }
+
+        // Reset button
+        reloadKbButton.textContent = "Reload KB";
+        reloadKbButton.disabled = false;
+      })
+      .catch((error) => {
+        console.error("Error reloading knowledge base:", error);
+        addMessage("Failed to reload knowledge base.", false, true);
+
+        // Reset button
+        reloadKbButton.textContent = "Reload KB";
+        reloadKbButton.disabled = false;
+      });
+  });
+
+  // Function to check knowledge base status
+  function checkKbStatus() {
+    fetch("/api/status")
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.vector_store_initialized) {
+          statusIndicator.className = "status-indicator active";
+          statusText.textContent = `${data.pdf_count} PDF${
+            data.pdf_count !== 1 ? "s" : ""
+          } loaded`;
+        } else {
+          statusIndicator.className = "status-indicator error";
+          statusText.textContent = "Knowledge base not initialized";
+        }
+      })
+      .catch((error) => {
+        console.error("Error checking KB status:", error);
+        statusIndicator.className = "status-indicator error";
+        statusText.textContent = "Error checking status";
+      });
+  }
+
+  // Check KB status on page load
+  checkKbStatus();
 });
